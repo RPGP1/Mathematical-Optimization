@@ -40,7 +40,7 @@ int main()
                 }
 
                 const auto f_w = (A * w - b).squaredNorm() + lambda * w.squaredNorm();
-                if (prev_f_w - f_w < 1e-14) {
+                if (prev_f_w - f_w < 1e-13) {
                     break;
                 }
                 prev_f_w = f_w;
